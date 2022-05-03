@@ -1,0 +1,25 @@
+// affects the positioning of the landing page div
+.landing-page {
+    width: 40vw;
+    margin: 0 auto 0 10vw; // top right bottom left -- make sure width + left = 50vw (half of view window)
+    height: 100vh;
+}
+
+// main text that people see on page load
+.title {
+    position: relative; // use relative so it affects how it looks
+    font-size: 10vw;
+    margin-top: 2vw;
+}
+// color of blinking
+.underscore {
+    color: #8f2a1e;
+}
+
+// subtitle has lighter color and lighter font weight inherited from globals
+.subtitle {
+    position: relative;
+    font-size: 1.5vw;
+    margin: -6vw 17vw auto auto;
+    letter-spacing: 0.1vw;
+}

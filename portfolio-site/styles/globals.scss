@@ -1,0 +1,29 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+// Global DOM elements
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('../public/images/background.webp'); // using webp format because it is simply better than jpg
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar { // hides scrollbars
+    width: 0;
+    height: 0;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #e79c6d;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #bd643c;
+}
