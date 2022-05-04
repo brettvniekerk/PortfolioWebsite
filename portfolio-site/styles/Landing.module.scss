@@ -1,8 +1,10 @@
 // affects the positioning of the landing page div
 .landing-page {
+    top: 0;
+    position: fixed; // these two lines prevent it moving
     width: 40vw;
     margin: 0 auto 0 10vw; // top right bottom left -- make sure width + left = 50vw (half of view window)
-    height: 100vh;
+    height: 100%;
 }
 
 // main text that people see on page load
