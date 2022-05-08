@@ -1,17 +1,16 @@
 // position scroll div on right side of vw
 .scroll-section {
-    position: absolute; // cause we wanna move the other elements relative to this
-    width: 40vw;
-    margin: 0 auto 0 50vw; // last value must be the total width of landing page
-    height: 100%;
-    // background-color: #ffe2d3; -- colour for divs
+    grid-column-start: right; // right side of screen
+    grid-row-start: row1-start; // position div in grid
+    grid-row-end: row2-start;
 }
 
 // position element at bottom of div
 .scroll {
-    margin: 47vw auto auto auto;
-    width: 50%;
+    position: absolute;
+    bottom: 0.5vw; // push it up a lil
+    width: 50vw; // three lines to center it oml
     text-align: center;
-    color: white;
+    color: #fff8ef;
     font-size: 1.2vw;
 }

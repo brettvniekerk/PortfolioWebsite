@@ -31,5 +31,11 @@ h2 {
 div {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: white;
+    color: #0d0e09;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [left] 50vw [right] 50vw; // separates grid into two
+    grid-template-rows: [row1-start] 100vh [row2-start] 100vh [last-line]; // starts outlining grid -- each row will be 100% of vh
 }

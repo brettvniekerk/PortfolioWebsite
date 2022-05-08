@@ -14,14 +14,17 @@ const Home: NextPage = () => {
         <meta name="description" content="This is my portfolio website! Take some time to look around :)" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      <div className='container'> {/* container for content */}
+      
+        <Landing />
 
-      {/* persists through out page */}
-      <Landing />
-
-      {/* scrolling right side elements */}
-      <Scroll />
-      <About />
-      <Projects />
+        {/* right side */}
+        <Scroll />
+        {/* <About /> */}
+        {/* <Projects /> */}
+        
+      </div>
 
       {/* maybe <Footer /> */}
     </div>
