@@ -1,6 +1,12 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
 
+// Animations
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 // Global DOM elements
 body {
     padding: 0;
@@ -34,8 +40,11 @@ div {
     color: #0d0e09;
 }
 
+// Container element
 .container {
     display: grid;
     grid-template-columns: [left] 50vw [right] 50vw; // separates grid into two
-    grid-template-rows: [row1-start] 100vh [row2-start] 100vh [last-line]; // starts outlining grid -- each row will be 100% of vh
+    grid-template-rows: [row1-start] 100vh [row2-start] 100vh [row3-start] 100vh [last-line]; // starts outlining grid -- each row will be 100% of vh
+
+    animation: fadeIn linear 1s; // fadeIn animation
 }

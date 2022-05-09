@@ -21,8 +21,8 @@ const Home: NextPage = () => {
 
         {/* right side */}
         <Scroll />
-        {/* <About /> */}
-        {/* <Projects /> */}
+        <About />
+        <Projects />
         
       </div>
 

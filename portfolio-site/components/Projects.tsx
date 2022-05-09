@@ -1,6 +1,8 @@
+import styles from '../styles/Projects.module.scss'
+
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className={styles['projects-section']}>Projects</div>
   )
 }
 
