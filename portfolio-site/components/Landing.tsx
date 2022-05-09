@@ -6,8 +6,8 @@ const Landing = () => {
   // state and effect
   const [underscoreOn, setUnderscoreOn] = useState(true) // state for if underscore showing
 
-  useEffect(() => { // runs on each render
-    const timer = setTimeout(() => { // creates a timer that runs every 500 milliseconds
+  useEffect(() => { // runs on each render -- triggered by the timeout lmao
+    const timer = setTimeout(() => { // creates a timer that runs after 500 milliseconds
       setUnderscoreOn(!underscoreOn) // inverts state
     }, 500)
 
@@ -17,7 +17,7 @@ const Landing = () => {
   return (
     <div className={styles['landing-page']}>
       <h1 className={styles['title']}>Hi{ underscoreOn && <span className={styles['underscore']}> |</span> }</h1> {/* shows blinking | (used to be underscore but cbs to change state name) -- if emoji use  &#128075; */}
-      <h2 className={styles['subtitle']}>My name is Brett, and I wanna be your next front end developer!</h2>
+      <h2 className={styles['subtitle']}>My name's Brett, and I wanna be your next front end developer!</h2>
     </div>
   )
 }

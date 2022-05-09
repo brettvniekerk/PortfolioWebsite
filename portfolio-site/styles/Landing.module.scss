@@ -1,6 +1,6 @@
 // affects the positioning of the landing page div
 .landing-page {
-    position: fixed !important; // while positioned in grid still needs to be persistent
+    position: absolute !important; // while positioned in grid still needs to be persistent
     grid-column-start: left; // position in grid
     grid-column-end: right;
     margin: 0 auto 0 10vw; 
@@ -20,6 +20,6 @@
 .subtitle {
     // position: relative;
     font-size: 1.5vw;
-    margin: -6vw 65vw auto auto; // used to customise text boundary
+    margin: -6vw 67.5vw auto auto; // used to customise text boundary
     letter-spacing: 0.1vw;
 }
