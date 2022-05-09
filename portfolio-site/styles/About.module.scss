@@ -1,0 +1,6 @@
+// position about div on right side of vw
+.about-section {
+    grid-column-start: right; // right side of screen
+    grid-row-start: row2-start; // position div in grid
+    grid-row-end: row3-start;
+}
