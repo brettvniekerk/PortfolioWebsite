@@ -1,3 +1,13 @@
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 // position scroll div on right side of vw
 .scroll-section {
     grid-column-start: right; // right side of screen
@@ -5,16 +15,36 @@
     grid-row-end: row2-start;
 }
 
-// position element at bottom of div
-.scroll {
+// css for initial element
+.scroll-fadeIn {
     position: absolute;
     bottom: 0.5vw; // push it up a lil
     width: 50vw; // three lines to center it oml
     text-align: center;
     color: #fff8ef;
     font-size: 1.2vw;
+
+    // animation: fadeIn linear 1s;             |
+    // opacity: 1; // fade in when reappeared   |   keep these lines if i decide to make it fade back in
+
+    &:hover {
+        cursor: pointer; // indicates you can click on scroll text
+    }
 }
 
-.scroll:hover {
-    cursor: pointer; // indicates you can click on scroll text
+// css for class change
+.scroll-fadeOut {
+    position: absolute;
+    bottom: 0.5vw; // push it up a lil
+    width: 50vw; // three lines to center it oml
+    text-align: center;
+    color: #fff8ef;
+    font-size: 1.2vw;
+
+    animation: fadeOut linear 1s;
+    opacity: 0; // make it disappear
+
+    &:hover {
+        cursor: pointer; // indicates you can click on scroll text
+    }
 }
