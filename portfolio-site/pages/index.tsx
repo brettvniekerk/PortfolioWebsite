@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useEffect } from 'react'
 
 // components
 import Landing from '../components/Landing'
@@ -10,13 +9,6 @@ import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
-
-  useEffect(() => { // useEffect to make the site scroll back to top on page load
-    window.scroll({
-      top: 0,
-      behavior: 'smooth', // auto doesn't work i have not idea why
-    })
-  }, [])
 
   return (
 

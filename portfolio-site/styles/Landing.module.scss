@@ -11,9 +11,13 @@
     font-size: 10vw;
     margin-top: 2vw; // move title slightly
 }
+
 // color of blinking
 .underscore {
+    position: relative;
     color: #8f2a1e;
+    font-weight: 500;
+    top: -0.7vw;
 }
 
 // subtitle has lighter color and lighter font weight inherited from globals

@@ -16,35 +16,25 @@
 }
 
 // css for initial element
-.scroll-fadeIn {
+.scroll {
     position: absolute;
     bottom: 0.5vw; // push it up a lil
     width: 50vw; // three lines to center it oml
     text-align: center;
     color: #fff8ef;
     font-size: 1.2vw;
-
-    // animation: fadeIn linear 1s;             |
-    // opacity: 1; // fade in when reappeared   |   keep these lines if i decide to make it fade back in
 
     &:hover {
         cursor: pointer; // indicates you can click on scroll text
     }
-}
 
-// css for class change
-.scroll-fadeOut {
-    position: absolute;
-    bottom: 0.5vw; // push it up a lil
-    width: 50vw; // three lines to center it oml
-    text-align: center;
-    color: #fff8ef;
-    font-size: 1.2vw;
+    &.fadeIn {
+        animation: fadeIn linear 0.35s;
+        opacity: 1; // fade in when reappeared
+    }
 
-    animation: fadeOut linear 1s;
-    opacity: 0; // make it disappear
-
-    &:hover {
-        cursor: pointer; // indicates you can click on scroll text
+    &.fadeOut {
+        animation: fadeOut linear 0.35s;
+        opacity: 0; // make it disappear
     }
 }
