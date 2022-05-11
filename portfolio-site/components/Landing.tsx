@@ -17,7 +17,7 @@ const Landing = () => {
   return (
     <div className={styles['landing-page']}>
       <h1 className={styles['title']}>Hi{ underscoreOn && <span className={styles['underscore']}> |</span> }</h1> {/* shows blinking | (used to be underscore but cbs to change state name) -- if emoji use  &#128075; */}
-      <h2 className={styles['subtitle']}>{`My name's Brett, and I wanna be your next front end developer!`}</h2> {/* use string literal to prevent build errors */}
+      <h2 className={styles['subtitle']}>{`My name's Brett, and I want to be your next front end developer!`}</h2> {/* use string literal to prevent build errors */}
     </div>
   )
 }
