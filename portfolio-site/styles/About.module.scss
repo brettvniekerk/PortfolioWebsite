@@ -14,24 +14,64 @@
     background: rgb(253,234,208);
     background: linear-gradient(225deg, rgba(253,234,208,1) 0%, rgba(253,234,208,1) 40%, rgba(254,206,157,1) 100%); // very sexy gradient
     border-radius: 2vw;
-    box-shadow: -1vw 2vh 8vw -2vw black; // h-offset v-offset blur spread color
+    box-shadow: -1vw 2vh 8vw -2vw rgba(0, 0, 0, 0.9); // h-offset v-offset blur spread color
+
+    font-size: 1vw; // baseline font size
+    overflow: scroll; // make scrollable
+}
+
+.about-box::-webkit-scrollbar { // hide scrollbars
+    width: 0;
+    height: 0;
 }
 
 .section-title {
     margin: 0;
 
     color: #8f2a1e;
-    font-size: 2vw;
+    font-size: 200%;
 }
 
 .section-p {
     margin: 0;
+    margin-top: 1vw;
 
-    font-size: 1.15vw;
+    font-size: 115%;
 }
 
 .list-item {
     margin: 0;
 
-    font-size: 1.15vw;
+    font-size: 115%;
+}
+
+.social-span { // button container
+    margin: auto;
+    width: 65%; // these two lines center the div
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-button { // customise buttons
+    background-color: #fff3e3;
+    color: #612121;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    font-size: 115%;
+    font-weight: 900;
+    padding: 1vw 2vw;
+    border-radius: 0.5vw;
+    box-shadow: 0 0.5vw 3vw 0.5vw rgba(0,0,0,0.15);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// fix break lines
+.break {
+    display: block;
+    content: ""; // clear default height
+    margin-top: 2vw;
 }
