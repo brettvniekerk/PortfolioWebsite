@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 
 // components
 import Landing from '../components/Landing'
@@ -18,9 +19,20 @@ const Home: NextPage = () => {
         <meta name="description" content="This is my portfolio website! Take some time to look around :)" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
+      {/* bg image - props make it act like background image */}
+      <Image 
+        className='bg-image'
+        src='/images/background.webp'
+        alt='Coffee-like background image'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        priority
+      />
+
       <div className='container'> {/* container for content */}
-      
+
         <Landing />
 
         {/* right side */}

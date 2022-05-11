@@ -11,10 +11,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url('../public/images/background.webp'); // using webp format because it is simply better than jpg
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: black; // keep in case i want to fade in background image
 }
 
 body::-webkit-scrollbar { // hides scrollbars
@@ -34,6 +31,14 @@ h2, div, p {
     color: #bd643c;
 }
 
+// background image element
+.bg-image {
+    z-index: -1000; // it will never interfere
+    position: fixed !important; // make sure it doesn't move
+
+    // animation: fadeIn linear 1s; // fade in background image
+}
+
 // Container element
 .container {
     display: grid;
@@ -41,4 +46,6 @@ h2, div, p {
     grid-template-rows: [row1-start] 100vh [row2-start] 100vh [row3-start] 100vh [last-line]; // starts outlining grid -- each row will be 100% of vh
 
     animation: fadeIn linear 1s; // fadeIn animation
+
+    z-index: 1;
 }
