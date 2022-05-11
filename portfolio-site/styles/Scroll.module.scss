@@ -1,13 +1,3 @@
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 // position scroll div on right side of vw
 .scroll-section {
     grid-column-start: right; // right side of screen
@@ -26,15 +16,5 @@
 
     &:hover {
         cursor: pointer; // indicates you can click on scroll text
-    }
-
-    &.fadeIn {
-        animation: fadeIn linear 0.35s;
-        opacity: 1; // fade in when reappeared
-    }
-
-    &.fadeOut {
-        animation: fadeOut linear 0.35s;
-        opacity: 0; // make it disappear
     }
 }

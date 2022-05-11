@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 // components
 import Landing from '../components/Landing'
@@ -10,6 +11,16 @@ import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
+
+  useEffect(() => {
+
+    // scroll to top of page on page load
+    window.scroll({
+      top: 0, 
+      behavior: 'smooth',
+    })
+
+  }, [])
 
   return (
 

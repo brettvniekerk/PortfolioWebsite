@@ -3,18 +3,26 @@ import { useState, useEffect } from 'react'
 
 const Scroll = () => {
 
-  // state for is fading
-  const [isFade, setIsFade] = useState(false)
+  const [scrollAmount, setScrollAmount] = useState(0) // scroll amount
+  const [opacityAmount, setOpacityAmount] = useState(1)
 
   useEffect(() => {
 
-    const onScroll = () => setIsFade(window.scrollY !== 0)
+    const getScroll = () => { 
+      setScrollAmount(Math.floor(window.scrollY)) // floor scroll pos so it can be compared with the window height
+    }
 
-    window.addEventListener('scroll', onScroll)
+    window.addEventListener('scroll', getScroll)
 
-    return () => window.removeEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', getScroll)
 
   }, [])
+
+  useEffect(() => {
+
+    setOpacityAmount( (scrollAmount < (window.innerHeight * 0.65)) ? (1 - (scrollAmount / (window.innerHeight * 0.65))) : 0 ) // fade out when scroll up
+
+  }, [scrollAmount])
 
   const scrollNext = () => { // function to scroll to next section (react-scroll wasn't working) -- also triggers fadeout animation
     window.scroll({
@@ -25,7 +33,7 @@ const Scroll = () => {
 
   return (
     <div className={styles['scroll-section']}>
-      <div className={`${styles['scroll']} ${styles[`${isFade ? 'fadeOut' : 'fadeIn'}`]}`} onClick={scrollNext}>SCROLL <br /> {/* TRUE: fadeOut, FALSE: fadeIn */}
+      <div className={styles['scroll']} style={{opacity: opacityAmount}} onClick={scrollNext}>SCROLL <br /> {/* TRUE: fadeOut, FALSE: fadeIn */}
       &#8595;</div>
     </div>
   )
