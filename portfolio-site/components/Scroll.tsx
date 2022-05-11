@@ -8,10 +8,7 @@ const Scroll = () => {
 
   useEffect(() => {
 
-    const onScroll = () => {
-      setIsFade(window.scrollY !== 0)
-      console.log(window.scrollY)
-    }
+    const onScroll = () => setIsFade(window.scrollY !== 0)
 
     window.addEventListener('scroll', onScroll)
 

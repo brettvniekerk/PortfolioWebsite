@@ -3,4 +3,35 @@
     grid-column-start: right; // right side of screen
     grid-row-start: row2-start; // position div in grid
     grid-row-end: row3-start;
+
+    display: flex; // flexbox
+    padding: 3vw 3vw; // padd inner div
+}
+
+.about-box {
+    flex: 1; // flex to size of padded parent div -- .about-section
+    padding: 2vw 2vw;
+    background: rgb(253,234,208);
+    background: linear-gradient(225deg, rgba(253,234,208,1) 0%, rgba(253,234,208,1) 40%, rgba(254,206,157,1) 100%); // very sexy gradient
+    border-radius: 2vw;
+    box-shadow: -1vw 2vh 8vw -2vw black; // h-offset v-offset blur spread color
+}
+
+.section-title {
+    margin: 0;
+
+    color: #8f2a1e;
+    font-size: 2vw;
+}
+
+.section-p {
+    margin: 0;
+
+    font-size: 1.15vw;
+}
+
+.list-item {
+    margin: 0;
+
+    font-size: 1.15vw;
 }
