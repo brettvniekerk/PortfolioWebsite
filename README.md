@@ -14,4 +14,4 @@ Specific challenges involved the implementation of more advanced features, like 
 In terms of CSS, it became very extensive and unoptimised due to a lack of proficiency with the language. With respect to the new site, my CSS has definitely improved, and resulted in cleaner, readable, and optimised code. Using CSS grids to block the layout of the site has made the process of structuring everything infinitely easier too.
 
 ## Hosting
-Check out the old site if you fancy it @ https://portfolio-site-brettvniekerk.vercel.app/
+Check out the old site if you fancy it @ https://portfolio-website-opal-three.vercel.app/
